@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Weather In {{ location }}</h1>
+    <img src="{{ url_for('static', filename=temperature_plot) }}?{{ cache_buster }}" alt="Temperature Plot">
+    <img src="{{ url_for('static', filename=cloud_cover_plot) }}?{{ cache_buster }}" alt="Cloud Cover Plot">
+    <img src="{{ url_for('static', filename=precipitation_plot) }}?{{ cache_buster }}" alt="Precipitation Plot">
+</body>
+</html>
